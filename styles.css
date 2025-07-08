@@ -4,14 +4,15 @@ body {
   background: linear-gradient(to right, #f0c27b, #4b1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.formulario {
+#formulario { /*cambiado a # */
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
 }
-
-.formulario input, select {
+#formulario input, select {
   border: none;
   height: 20px;
   border-radius: 5px;
@@ -19,17 +20,17 @@ body {
 
 .error {
   background-color: red;
+  color: aliceblue; /*agregado para mejor constraste*/
 }
 
 .elemento-lista {
   color: #4b1248;
   font-family: Verdana;
-  margin: 10px 0;
   border: 5px solid #4b1248;
   border-radius: 5px;
   padding: 0 5px;
   width: 400px;
-  margin: 20px
+  margin: 20px auto; /*corregido margen repetido*/
 }
 
 .elemento-lista input {
